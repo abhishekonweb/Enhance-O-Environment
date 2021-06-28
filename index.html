@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+	<title> Enhance-O-Environment </title>
+	<link rel="stylesheet" type="text/css" href="istyle.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="logo">
+				<h2 class="logoname"> Enhance-o-Environment</h2>
+			</div>
+			<ul class="uli">
+				<li class="l1"><a href="index.html" target="_blank">Home</a></li>
+				<li class="l1"><a href="problems.html" target="_blank">Concerns</a></li>
+				<li class="l1"><a href="weatherreport.html" target="_blank">Weather Report</a></li>
+				<li class="l1"><a href="contact.html" target="_blank">Contact Us</a></li>
+
+			</ul>
+			<div class="ei">
+				<ol>
+					<li><a href="#">Help |</a></li>
+					<li><a href="#">Search |</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ol>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="main_con">
+			<div class="card">
+				<div class="imcard">
+				<div class="w-m">
+					<p class="d2">"Climate justice for this climate chaos"</p>
+				</div>
+			</div>
+			</div>
+			<div class="card2">
+				<div class="geol">
+					<h3 class="gt">Geolocation</h3>
+					<div class="cn1"><input type="number" placeholder="longitude" steps="0.0001" name="geolocation" value="" id="lon" class="lon"></div>
+			
+					<div class="cn2"><input type="number" placeholder="latitude" steps="0.0001" name="geolocation" value="" id="lat" class="lat"></div>
+					<button id="but" class="but">Search</button>
+				</div>
+				<div class="infom">
+					<div class=m-h>
+						<h2 class="aqtitle">Air Quality Index [AQI]<h2>
+					</div>
+					<div class="val1">
+                    <p class="aq1" id="aq1">Air Quality index: <div class="lkp"><span class="sp1" id="sp1">..... </span><div class="dots"> <p class="dot1"> &#11044;</p><p class="dot2"> &#11044;</p><p class="dot3"> &#11044;</p><p class="dot4"> &#11044;</p><p class="dot5"> &#11044;</p></div></div></p>
+                    <p class="aq2" id="aq2">Air Quality Status :<br> <span class="sp2" id="sp2">&#11044 .....</span></p>
+					</div>
+				</div>      
+				<div class="card3">
+					<div class="component-container">
+<h2 class="sub-heading-1 ">Concentration of pollutants in Air</h2>
+<div >
+<h3 class="comp-name aaa">Carbon Monoxide:</h3>
+<span class="val" data-comp="co">.....</span>
+</div>
+<div >
+<h3 class="comp-name">Nitrogen Monoxide:</h3>
+<span class="val" data-comp="no">.....</span>
+</div>
+<div >
+<h3 class="comp-name">Nitrogen dioxide:</h3>
+<span class="val" data-comp="no2">.....</span>
+</div>
+<div >
+<h3 class="comp-name">Sulphur dioxide:</h3>
+<span class="val" data-comp="so2">.....</span>
+</div>
+<div >
+<h3 class="comp-name">Fine particles:</h3>
+<span class="val" data-comp="pm2_5">.....</span>
+</div>
+<div >
+<h3 class="comp-name">Coarse particle matter:</h3>
+<span class="val" data-comp="pm10">.....</span>
+</div>
+<div >
+<h3 class="comp-name">Ammonia:</h3>
+<span class="val vals" data-comp="nh3">.....</span>
+</div>
+</div>
+				</div>
+			</div>
+
+			<div class="maploc">
+				<div class="maphead">
+					<h1 class="mhead"> Pointing Location of the Area </h1> 
+				</div>
+				<div class="holdmap">
+					<div id='map'class='map' style='width: 65%; height: 90vh;'></div>
+				</div>
+				<div class=map-inc>
+            <div class="m_c_container"> <h2 class="m_c"> Marked Location </h2>
+			</div>
+			<div class="m_val">
+				<div class="ds1 ds1a"><h2 class="dds1 dv1">Green:</h2><p class="ddds1 dp1">Condition: Good</p></div>
+				<div class="ds1"><h2 class="dds1 dv2">Yellow:</h2><p class="ddds1 dp2">Condition: Moderate</p> </div>
+				<div class="ds1"><h2 class="dds1 dv3">Orange:</h2><p class="ddds1 dp3">Condition:
+				Unhealthy [Catg-1]</p></div>
+				<div class="ds1"><h2 class="dds1 dv4">Red:</h2><p class="ddds1 dp4">Condition:
+				Unhealthy [Catg-2]</p></div>
+				<div class="ds1 ds111"><h2 class="dds1 dv5">Maroon:</h2><p class="ddds1 dp5">Condition:
+				Unhealthy [Catg-3]</p></div>
+			</div>
+		</div>
+
+			</div>
+
+		</div>
+	</main>
+	<footer>
+		<div class="foot_info">
+			<div class="c-r"><a href="#">Back to Top</a></div>
+			<div class="c-r1">
+				<a href="https://www.facebook.com"><img src="images/fb.png" alt=""></a>
+				<a href="https://www.instagram.com"><img src="images/inst.png" alt=""></a>
+				<a href="https://www.linkedin.com"><img src="images/twit.png" alt=""></a>
+				<a href="https://www.gmail.com"><img src="images/gm.png" alt=""></a>
+			</div>
+			<div class="c-r2"><p class="crc">Copyright @2021 Coding Voldemorts </p></div>
+		</div>
+	</footer>
+	</body>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYW51ajkxIiwiYSI6ImNrcGgybWF2MjJoaDYyd2xscWU3ODR5MXMifQ.IB8aLcigvcU-_KWWz7-xSg';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+     zoom:3.5,
+    center:[90,20]
+
+  });
+</script>
+<script type="text/javascript" src="i.js">
+	</script>
+</html>

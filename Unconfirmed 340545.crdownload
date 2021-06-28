@@ -1,0 +1,52 @@
+const a=document.getElementById("buts1");
+const b=document.getElementById("buts2");
+const c=document.getElementById("buts3");
+const d=document.getElementById("buts4");
+const e=document.getElementById("buts5");
+const f=document.getElementById("venmo1");
+const g=document.getElementById("venmo2");
+const h=document.getElementById("venmo3");
+const i=document.getElementById("venmo4");
+const j=document.getElementById("venmo5");
+const k=document.getElementById("buts6");
+const l=document.getElementById("venmo6");
+
+a.addEventListener("click",()=>{
+f.style.display="block";
+g.style.display="none";
+h.style.display="none";
+i.style.display="none";
+j.style.display="none";
+})
+b.addEventListener("click",()=>{
+f.style.display="none";
+g.style.display="block";
+h.style.display="none";
+i.style.display="none";
+j.style.display="none";
+})
+c.addEventListener("click",()=>{
+f.style.display="none";
+g.style.display="none";
+h.style.display="block";
+i.style.display="none";
+j.style.display="none";
+})
+d.addEventListener("click",()=>{
+f.style.display="none";
+g.style.display="none";
+h.style.display="none";
+i.style.display="block";
+j.style.display="none";
+})
+e.addEventListener("click",()=>{
+f.style.display="none";
+g.style.display="none";
+h.style.display="none";
+i.style.display="none";
+j.style.display="block";
+})
+k.addEventListener("click",()=>{
+l.style.display="block";
+
+})
